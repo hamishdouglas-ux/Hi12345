@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Google Docs</title>
-    <!-- THE ENGINE: You must point to the loader.js file specifically -->
+    <!-- Students name the tab "Google Docs" to hide from teachers -->
+    <title>Google Docs</title> 
+
+    <!-- THE ENGINE: This is the Virtual Java Machine (JVM). 
+         IT PRO TIP: Block "leaningtech.com" to stop this exploit globally. -->
     <script src="https://cjrtnc.leaningtech.com"></script>
 </head>
 <body style="margin:0; background-color:black; overflow:hidden;">
     <script>
-        // Starts the Virtual Java Machine
+        // 1. INITIALIZE: This starts the Java-to-JavaScript engine.
         cheerpjInit();
-        // Creates the game window based on the browser size
+
+        // 2. DISPLAY: This creates the game window. 
+        // window.innerWidth/Height makes it fill the whole browser tab.
         cheerpjCreateDisplay(window.innerWidth, window.innerHeight);
-        // Runs the Minecraft 1.5.2 JAR file you uploaded
+
+        // 3. RUN: This is the command that opens the actual game.
+        // It looks for the file "1.5.2.jar" in your GitHub folder.
+        // IMPORTANT: The filename below MUST match your JAR file name exactly.
         cheerpjRunMain("net.minecraft.client.Minecraft", "/app/1.5.2.jar");
     </script>
 </body>
