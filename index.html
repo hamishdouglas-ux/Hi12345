@@ -2,14 +2,16 @@
 <html>
 <head>
     <title>Google Docs</title>
-    <!-- THE ENGINE: Block leaningtech.com to kill this exploit -->
+    <!-- THE ENGINE: You must point to the loader.js file specifically -->
     <script src="https://cjrtnc.leaningtech.com"></script>
 </head>
 <body style="margin:0; background-color:black; overflow:hidden;">
     <script>
+        // Starts the Virtual Java Machine
         cheerpjInit();
+        // Creates the game window based on the browser size
         cheerpjCreateDisplay(window.innerWidth, window.innerHeight);
-        // THE PATH: This MUST match your JAR filename exactly
+        // Runs the Minecraft 1.5.2 JAR file you uploaded
         cheerpjRunMain("net.minecraft.client.Minecraft", "/app/1.5.2.jar");
     </script>
 </body>
